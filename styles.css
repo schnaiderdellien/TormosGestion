@@ -907,7 +907,7 @@ nav ul li a {
   z-index: 2;
   box-shadow: var(--sombra);
   transition: var(--transicion);
-  top: 58%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
