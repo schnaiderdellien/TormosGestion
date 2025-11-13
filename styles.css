@@ -35,20 +35,15 @@ body {
   width: 100%;
 }
 .indicadorSeleccionado {
-  background-color: rgba(
-    32,
-    178,
-    170,
-    0.15
-  ); /* Turquesa muy suave y translúcido */
-  backdrop-filter: blur(10px); /* Efecto glass suave */
-  border: 1px solid rgba(32, 178, 170, 0.3); /* Borde sutil */
-  border-radius: 8px; /* Esquinas redondeadas */
+  background-color: rgba(32, 178, 170, 0.15);
+  backdrop-filter: blur(10px); /* suave */
+  border: 1px solid rgba(32, 178, 170, 0.3);
+  border-radius: 8px;
   padding: 8px 16px;
   transition: all 0.3s ease;
 }
 
-/* ===== HEADER MODERNO ===== */
+/*  HEADER */
 .header {
   position: fixed;
   top: 0;
@@ -154,7 +149,7 @@ nav ul li a {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== RESPONSIVE ===== */
+/*  mediaQ de header  */
 @media (max-width: 1024px) {
   nav ul {
     gap: 40px;
@@ -309,7 +304,7 @@ nav ul li a {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== RESPONSIVE ===== */
+/*  RESPONSIVE  */
 @media (max-width: 1024px) {
   nav ul {
     gap: 40px;
@@ -359,7 +354,7 @@ nav ul li a {
   }
 }
 
-/* ===== HERO SECTION ===== */
+/*  HERO SECTION  */
 .imgPortada {
   position: relative;
   height: 100vh;
@@ -421,34 +416,31 @@ nav ul li a {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 40%; /* Ajusta según el tamaño deseado */
-  max-width: 600px; /* Tamaño máximo para pantallas grandes */
-  min-width: 350px; /* Tamaño mínimo para pantallas pequeñas */
+  width: 40%;
+  max-width: 600px;
+  min-width: 350px;
 }
 
 .logoPortada img {
   width: 100%;
   height: auto;
   display: block;
-  filter: drop-shadow(
-    0 0 10px rgba(0, 0, 0, 0.5)
-  ); /* Opcional: sombra para mejor visibilidad */
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 
-/* Versión responsive para pantallas pequeñas */
 @media (max-width: 768px) {
   .logoPortada {
-    width: 60%; /* Logo más grande en móviles */
+    width: 60%;
   }
 }
 
 @media (max-width: 480px) {
   .logoPortada {
-    width: 70%; /* Logo aún más grande en móviles muy pequeños */
+    width: 70%;
   }
 }
 
-/* ===== CONTENIDO PRINCIPAL ===== */
+/*  CONTENIDO PRINCIPAL  */
 .content {
   padding: 120px 40px 80px;
   max-width: 1200px;
@@ -507,7 +499,7 @@ nav ul li a {
   text-align: justify;
 }
 
-/* ===== SECCIÓN GESTOR ===== */
+/*  SECCIÓN GESTOR  */
 .gestor {
   display: flex;
   align-items: center;
@@ -548,7 +540,7 @@ nav ul li a {
   line-height: 1.8;
 }
 
-/* ===== TARJETAS MODERNAS ===== */
+/*  TARJETAS   */
 .tarjetas-section {
   display: flex;
   justify-content: center;
@@ -618,7 +610,7 @@ nav ul li a {
   transform: scale(1.05);
 }
 
-/* ===== FOOTER MODERNO ===== */
+/*  FOOTER   */
 .footer {
   background: linear-gradient(135deg, var(--gris-oscuro) 0%, var(--negro) 100%);
   color: var(--blanco);
@@ -760,7 +752,7 @@ nav ul li a {
   color: #90a4ae;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/*  RESPONSIVE  */
 @media (max-width: 1200px) {
   nav ul {
     gap: 40px;
@@ -902,7 +894,7 @@ nav ul li a {
   }
 }
 
-/* ===== FORMULARIO ===== */
+/*  FORMULARIO  */
 
 .imgPortadaContacto {
   position: relative;
@@ -936,7 +928,6 @@ nav ul li a {
   filter: brightness(0.8);
 }
 
-/* FORMULARIO CON POSITION: ABSOLUTE PERO RESPONSIVE */
 .form-container {
   width: 400px;
   background: linear-gradient(#2c3e5000, #2c3e5000) padding-box,
@@ -957,18 +948,18 @@ nav ul li a {
   z-index: 2;
   box-shadow: var(--sombra);
   transition: var(--transicion);
-  top: 55%; /* Centrado vertical */
-  left: 50%; /* Centrado horizontal */
-  transform: translate(-50%, -50%); /* Centrado perfecto */
-  max-height: 90vh; /* Máxima altura para evitar desbordes */
-  overflow-y: auto; /* Scroll interno si es necesario */
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
   .imgPortadaContacto {
     height: 150vh;
-    min-height: 700px; /* Más altura en móviles */
+    min-height: 700px;
   }
 
   .form-container {
@@ -988,7 +979,7 @@ nav ul li a {
 @media (max-width: 480px) {
   .imgPortadaContacto {
     height: 120vh;
-    min-height: 667px; /* Aún más altura para móviles pequeños */
+    min-height: 667px;
   }
 
   .form-container {
@@ -1009,7 +1000,7 @@ nav ul li a {
   .form-container .form-group textarea,
   .form-container .form-group select {
     padding: 12px 14px;
-    font-size: 16px; /* Previene zoom en iOS */
+    font-size: 16px;
   }
 
   .form-container .form-submit-btn {
@@ -1018,14 +1009,14 @@ nav ul li a {
   }
 
   .form-container .form-group textarea {
-    height: 80px; /* Menos altura en móviles */
+    height: 80px;
   }
 }
 
 @media (max-width: 386px) {
   .imgPortadaContacto {
     height: 150vh;
-    min-height: 80px; /* Altura extra para dispositivos muy pequeños */
+    min-height: 80px;
   }
 
   .form-container {
@@ -1067,7 +1058,7 @@ nav ul li a {
   .form-container {
     top: 100%;
     transform: translate(-50%, -50%);
-    max-height: 85vh; /* Menos altura máxima en landscape */
+    max-height: 85vh;
   }
 
   .form-container .form-group textarea {
@@ -1086,7 +1077,7 @@ nav ul li a {
 
   .form-container {
     transform: translate(-50%, -50%);
-    max-height: 85vh; /* Menos altura máxima en landscape */
+    max-height: 85vh;
     top: 80%;
   }
 
@@ -1108,7 +1099,7 @@ nav ul li a {
     top: 150%;
     transform: translate(-50%, -50%);
     padding-top: 50px;
-    max-height: 85vh; /* Menos altura máxima en landscape */
+    max-height: 85vh;
   }
 
   .form-container .form-group textarea {
@@ -1128,7 +1119,7 @@ nav ul li a {
   .form-container {
     top: 100%;
     transform: translate(-50%, -50%);
-    max-height: 85vh; /* Menos altura máxima en landscape */
+    max-height: 85vh;
     top: 100%;
   }
 
@@ -1166,7 +1157,6 @@ nav ul li a {
   }
 }
 
-/* Mantener el resto de estilos del formulario intactos */
 .form-container button:active {
   scale: 0.95;
 }
